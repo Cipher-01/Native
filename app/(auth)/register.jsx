@@ -1,7 +1,8 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet, Pressable } from 'react-native'
 import { Link } from 'expo-router'
+import { Colors } from '../../constants/Colors'
 
-//themed components
+//themed components utsav changed radi
 import ThemedView from '../../components/ThemedView'
 import ThemedText from '../../components/ThemedText'
 import Spacer from '../../components/Spacer'
@@ -15,6 +16,10 @@ const Register = () => {
     <ThemedText title={true} style={styles.title}> 
       Register for an Account
     </ThemedText>
+
+    <Pressable style={({pressed}) => {styles.btn, pressed && styles.pressed}} >
+
+    </Pressable>
 
     <Spacer height={100} />
     <Link href= '/login'>
