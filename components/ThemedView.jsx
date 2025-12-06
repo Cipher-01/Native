@@ -3,6 +3,7 @@ import { Colors } from '../constants/Colors'
 
 const ThemedView = ({ style, ...props }) => {
   const colorScheme = useColorScheme()
+  console.log(colorScheme)
   const theme = Colors[colorScheme] ?? Colors.light
 
   return (
